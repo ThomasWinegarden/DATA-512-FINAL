@@ -21,6 +21,20 @@ This analysis contained in this report is meant to be fully reproducible. The [C
 
 This analysis relies on the [Checkouts by Title dataset](https://data.seattle.gov/Community/Checkouts-by-Title/tmmm-ytt6) which is publicly available through Seattle governments Open Data Program.
 
+Column | Format | Description |
+|-----|------------|----|
+UsageClass | Text | Denotes if item is “physical” or “digital” |
+CheckoutType | Text | Denotes the vendor tool used to check out the item. |
+MaterialType | Text | Describes the type of item checked out (examples: book, song movie, music, magazine) |
+CheckoutYear | Number | The 4-digit year of checkout for this record. |
+CheckoutMonth | Number | The month of checkout for this record. |
+Checkouts | Number | A count of the number of times the title was checked out within the “Checkout Month”. |
+Title | Text | The full title and subtitle of an individual item | 
+Creator | Text | The author or entity responsible for authoring the item. |
+Subjects | Text | The subject of the item as it appears in the catalog |
+Publisher | Text | The publisher of the title |
+PublicationYear | Text | The year from the catalog record in which the item was published, printed, or copyrighted. |
+
 ## Data Limitations
 
 The dataset I found to be surpisingly clean and was able to quantify a lot based on checkouts. I believe the data limitation in this current area is the lack of KCLS checkout data. This is the largest US library system and I was disappointed to not be able to find their checkout data.
